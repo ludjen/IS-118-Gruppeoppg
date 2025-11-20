@@ -1,3 +1,6 @@
+#denne sørger for at input alltid er a eller b
+#dersom input er noe annet vil koden fortsette å spørre etter svar.
+
 def get_choice(questions):
     while True:   
         svar = input(questions + " (a/b): ").strip().lower()
@@ -5,6 +8,7 @@ def get_choice(questions):
             return svar
         print("Ugyldig valg, svar a eller b.")
 
+#Her lagde jeg en pause, slik at bruker får tid til å lese, uten at det blir rotete.
 
 def pause():
     input("\n(Trykk Enter for å fortsette)\n")
@@ -17,6 +21,7 @@ def spill():
     pause()
 
 
+#her gir jeg brukeren sitt første valg og kaller derfor på get_choice.
     
     print("BESLUTNING 1, Konflikt mellom Silje (UX) og Sivert (IT)\n")
     print("a) Ta det opp i plenum for å skape åpenhet")
@@ -50,12 +55,14 @@ def spill():
         print("\nDu presser på for fremdrift. Det gir progresjon, men kan slite på enkelte.")
     pause()
 
-    
+    #liten oppsummering som avhenger av brukerens valg.
     print("\n Oppsummering av valg")
     print("1) Silje/Sivert: ", "Plenum" if c1 == "a" else "Samtaler")
     print("2) Hamdi/Jabir: ", "Felles møte" if c2 == "a" else "Avvente")
     print("3) Motivasjon:  ", "Relasjoner" if c3 == "a" else "Fremdrift")
     pause()
+
+    #her får bruker sitt resultat avhengig av hvordan de har svart på tidligere valg.
 
     print("\n RESULTAT \n")
     if c1 == "a" and c2 == "a" and c3 == "a":
