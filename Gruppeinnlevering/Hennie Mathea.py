@@ -1,4 +1,3 @@
-# IS-118-Gruppeoppg
 # Hvordan skal Erling løse konfliktene han står overfor på jobben?
 
 # Første valget til Erling
