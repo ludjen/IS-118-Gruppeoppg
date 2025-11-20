@@ -1,3 +1,4 @@
+
 # Hvordan skal Erling løse konfliktene han står overfor på jobben?
 
 # Første valget til Erling
@@ -10,8 +11,6 @@ def pause():
     input("Trykk Enter for å fortsette...")
 
 pause()
-
-
 
 print("Silje og Sivert er uenige om hvordan de skal løse et prosjekt.")
 
@@ -73,4 +72,5 @@ elif (choice1 == "b" and choice2 == "b" and choice3 == "b"):
 else:
     print("Du har gjort ditt beste, men det er fortsatt rom for forbedering i konflikthåndtering og teamledelse. Lykke til videre!")
 
+    
     
