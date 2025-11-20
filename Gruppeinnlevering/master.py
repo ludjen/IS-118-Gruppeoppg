@@ -68,6 +68,8 @@ pause()
 
 if (choice1 == "a" and choice2 == "a" and choice3 == "a"):
     print("Gratulerer! Du har håndtert konfliktene på en utmerket måte og skapt et sterkt og motivert team!")
+elif (choice1 == "b" and choice2 == "b" and choice3 == "b"):
+    print("Konflikthåndtering er ikke din sterkeste siden, men du er sikkert god på andre ting!")
 else:
     print("Du har gjort ditt beste, men det er fortsatt rom for forbedering i konflikthåndtering og teamledelse. Lykke til videre!")
 
