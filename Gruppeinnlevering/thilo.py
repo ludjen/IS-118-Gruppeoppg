@@ -1,16 +1,18 @@
 
-# Hvordan skal Erling løse konfliktene han står overfor på jobben?
-
-# Første valget til Erling
+# Introduksjon til spillet
 
 print("Velkommen til Erling's konfliktløsningsprogram!")
 
-print("Du spiller som Erling og står overfor en konflikt på jobben. hvordan vil du løse det?")
+print("\nDu spiller et spill hvor du styrer Erlings handlinger som leder hvor han skal håndtere konflikter på arbiedseidsplassen.\n")
+
+# Her defineres en pause som gjør at brukeren må trykke enter for å fortsette. Dette gjør at brukeren ikke får for mye informasjon på en gang.
 
 def pause():
     input("Trykk Enter for å fortsette...")
 
 pause()
+
+# Dette er første valget som Erling blir stilt overfor
 
 print("Silje og Sivert er uenige om hvordan de skal løse et prosjekt.")
 
@@ -19,7 +21,7 @@ print("Hvordan vil du håndtere konflikten mellom Silje og Sivert?\n")
 
 print("a: Ta det opp med hele teamet for å få flere perspektiver.\n b: Snakke direkte med Silje og Sivert for å forstå deres synspunkter.")
 
-choice1 = input()
+choice1 = input("\na eller b: ")
 
 if choice1 == "a":
     print("Du valgte å ta det opp med hele teamet.")
@@ -30,13 +32,15 @@ elif choice1 == "b":
 
 pause()
 
+# Andre valget til Erling som spilleren må ta
+
 print("Det har også oppstått en konflikt mellom Hamdi og Jabir som du må håndtere.\n")
 pause()
 print("Hvordan vil du håndtere konflikten mellom Hamdi og Jabir?\n")
 
 print("a: Inkalle til et felles møte for avklaring om hva som har skjedd. \n b: Vente og håpe at de finner ut av en løsning på egenhånd.")
 
-choice2 = input()
+choice2 = input("\na eller b: ")
 
 if choice2 == "a":
     print("Du valgte å inkalle til et felles møte.")
@@ -47,6 +51,8 @@ elif choice2 == "b":
 
 pause()
 
+# Det tredje valget til Erling som spilleren må ta
+
 print("Nå har du løst to konflikter, og det er bare en ting til å gjøre.\n Du må følge opp med teamet ditt for å sikre at alle er fornøyde langsiktig.\n")
 
 pause()
@@ -54,7 +60,7 @@ pause()
 print("Hvordan vil du holde oppe motivasjonen i teamet ditt i lengden?\n")
 
 print("a: Arrangere sosiale aktiviteter og gi tid til å styrke samhold og tillitt i teamet. \n b: Fokusere på prestasjoner og resultater.")
-choice3 = input()
+choice3 = input("\na eller b: ")
 
 if choice3 == "a":
     print("Du valgte å arrangere sosiale aktiviteter.")
@@ -65,12 +71,13 @@ elif choice3 == "b":
 
 pause()
 
+# Her blir en avslutning valgt basert på valgene som spilleren har tatt
+
 if (choice1 == "a" and choice2 == "a" and choice3 == "a"):
     print("Gratulerer! Du har håndtert konfliktene på en utmerket måte og skapt et sterkt og motivert team!")
 elif (choice1 == "b" and choice2 == "b" and choice3 == "b"):
-    print("Konflikthåndtering er ikke din sterkeste siden, men du er sikkert god på andre ting!")
+    print("Det oppstod problemer i ettertid og teamet var ikke fornøyde. Konflikthåndtering er ikke din sterkeste siden, men du er sikkert god på andre ting!")
 else:
-    print("Du har gjort ditt beste, men det er fortsatt rom for forbedering i konflikthåndtering og teamledelse. Lykke til videre!")
+    print("Teamet var delvis fornøyde, men gjengen var ikke like motiverte og det skurret mellom enkeltpersoner. Du har gjort ditt beste, men det er fortsatt rom for forbedring i konflikthåndtering og teamledelse. Lykke til videre!")
 
-    
-    
+
