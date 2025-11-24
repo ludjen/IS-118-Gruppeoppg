@@ -95,5 +95,7 @@ elif score == 2:
 else:
     print("Utfall 3: Prosjektet mister samhold.")
     print("Konfliktene hang igjen, motivasjonen sank, og prosjektet forsinkes.")
+    
 
 pause()
+
